@@ -28,6 +28,7 @@ const botoes = [document.getElementById('botoes'), document.getElementById('um')
 
 
 // function um() {
+    
 //     um.style.display = 'flex' 
 // } QUANDO UTILIZADO ESSE METODO DE EVENTO CLICK AS VARIAVEIS SO SAO LIDAS QUANDO SAO CRIACADAS DENTRO DA FUNCTION
 
@@ -145,9 +146,10 @@ botoes[11].onclick = () => {
             posicoes[posicoesProgramadas[i]].style.display = 'flex'
         }, Number(document.getElementById('tempo').value) * 1000 * i)
 
+
         setTimeout( function() {
             posicoes[posicoesProgramadas[i]].style.display = 'none'
-        }, Number(document.getElementById('tempo').value) * 1000 * i)
+        }, Number(document.getElementById('tempo').value) * 1000 * i + Number(document.getElementById('tempo').value) * 1000)
     }
 }
 
@@ -181,7 +183,6 @@ botoes[11].onclick = () => {
 // botoes[0].onclick = () => {
 //     alert('a')
 // }
-
 
 
 
