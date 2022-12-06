@@ -28,7 +28,6 @@ const botoes = [document.getElementById('botoes'), document.getElementById('um')
 
 
 // function um() {
-    
 //     um.style.display = 'flex' 
 // } QUANDO UTILIZADO ESSE METODO DE EVENTO CLICK AS VARIAVEIS SO SAO LIDAS QUANDO SAO CRIACADAS DENTRO DA FUNCTION
 
@@ -40,95 +39,92 @@ const botoes = [document.getElementById('botoes'), document.getElementById('um')
 // } TIRAR DUVIDA DE COMO TRANFORMAR UM IF OU FOR EM VARIAVEL OU COISA SEMELHANTE
 
 
-let posicoesProgramadas = []
+//  FUNCAO PARA APAGAR A POSICAO NA QUADRA
+// const mudaDisplay = {        MDS COMO EU CONSEGUIR FAZER O MAIS DIFICIL E DEXEI O MAIS FACIL DE LADO???
+//     dNone: function() {
+//         for (let i = 1; i < 9; i++) {
+//             posicoes[i].style.display = 'none'
+//         }
+//     }
+// }
+//  mudaDisplay.dNone()     NESSE CASO SERIA CHAMADO ASSIM A CONST DA FUNCA PQ ESSA VARIAVEL RECEBEU UM OBJETO
+
+
+// function mudaDisplay() {
+//     for (let i = 1; i < 9; i++) {
+//         posicoes[i].style.display = 'none'
+//     }
+// }     ABAIXO ESTA O NOVO MODELO DE FUNCAO
+
+function mudaDisplayEGrava(posicao) {
+    for (let i = 1; i < 9; i++) {
+        posicoes[i].style.display = 'none'
+    }
+    
+    posicoes[posicao].style.display = 'flex'
+
+    if (botoes[9].checked) {
+        posicoesProgramadas.push(posicao)
+    }
+}
+//let posicao = null    // CRIEI ESSA VARIAVEL SEM VALOR FORA DO ESCOPO DE EVENTO DE CLICK PARA ELA PODER SER LIDA PELA FUNCAO mudaDisplayEGrava() E DPS MODIFICADA EM CADA EVENTO DE CLICK    // TO FALANDO Q EU FACO O MAIS DIFICIL KKKK AGR COLOQUEI O VALOR DENTRO DO PARAMETRO DA FUNCAO
+
+
+// class teste {
+//     testando() {
+//         for (let i = 1; i < 9; i++) {
+//             posicoes[i].style.display = 'none'
+//         }
+//     }        ASSIM NAO FUNCIONOU
+// }
+//  FUNCAO PARA APAGAR A POSICAO NA QUADRA
+
+
+let posicoesProgramadas = ['a posicao 0 do array deve ficar ocupado com algo para q nao seja levado em consideracao quando armazenar as posicoes e ser lido pelo laco de repeticao referente ao temporizador (let i = 1 para nao existir 0 * Number(document.getElementById(tempo).value) e comecar o primerio passe rapido d+)']
+
+
+// botoes[1].onclick = () => {      ESTAVA SENDO USADO ESSE MODELO PRA CADA CLICK
+//     mudaDisplay.dNone()
+
+//     posicoes[1].style.display = 'flex'
+
+//     if (botoes[9].checked) {
+//         posicoesProgramadas.push(1)
+//     }
+// }
+
 
 
 botoes[1].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[1].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(1)
-    }
+    mudaDisplayEGrava(1)
 }
 
 botoes[2].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[2].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(2)
-    }
+    mudaDisplayEGrava(2)
 }
 
 botoes[3].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[3].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(3)
-    }
+    mudaDisplayEGrava(3)
 }
 
 botoes[4].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[4].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(4)
-    }
+    mudaDisplayEGrava(4)
 }
 
 botoes[5].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[5].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(5)
-    }
+    mudaDisplayEGrava(5)
 }
 
 botoes[6].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[6].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(6)
-    }
+    mudaDisplayEGrava(6)
 }
 
 botoes[7].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[7].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(7)
-    }
+    mudaDisplayEGrava(7)
 }
 
 botoes[8].onclick = () => {
-    for (let i = 1; i < 9; i++) {
-        posicoes[i].style.display = 'none'
-    }
-    posicoes[8].style.display = 'flex'
-
-    if (botoes[9].checked) {
-        posicoesProgramadas.push(8)
-    }
+    mudaDisplayEGrava(8)
 }
 
 
@@ -137,20 +133,28 @@ botoes[8].onclick = () => {
 
 
 botoes[11].onclick = () => {
+    // mudaDisplay.dNone() DESATIVADO E ABAIXO O CODIGO Q ERA CHAMADO AKI
     for (let i = 1; i < 9; i++) {
         posicoes[i].style.display = 'none'
     }
 
-    for (let i = 0; i < posicoesProgramadas.length; i++) {
-        setTimeout( function() {
-            posicoes[posicoesProgramadas[i]].style.display = 'flex'
-        }, Number(document.getElementById('tempo').value) * 1000 * i)
+    let tempo = Number(document.getElementById('tempo').value)
+    let repeticoes = Number(document.getElementById('repeticoes'))
 
-
-        setTimeout( function() {
-            posicoes[posicoesProgramadas[i]].style.display = 'none'
-        }, Number(document.getElementById('tempo').value) * 1000 * i + Number(document.getElementById('tempo').value) * 1000)
-    }
+    // for (let i = 0; i < 2; i++) {
+    //     setTimeout( function() {
+            for (let j = 1; j < posicoesProgramadas.length; j++) {
+                setTimeout( function() {
+                    posicoes[posicoesProgramadas[j]].style.display = 'flex'
+                }, tempo * 1000 * j)
+    
+    
+                setTimeout( function() {
+                    posicoes[posicoesProgramadas[j]].style.display = 'none'
+                }, tempo * 1000 * j + tempo * 1000)
+            }
+    //     }, tempo * 1000 * posicoesProgramadas.length )
+    // }
 }
 
 
