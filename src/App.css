@@ -1,0 +1,202 @@
+#quadra {
+    /* centralizacao */
+    margin: 2%;
+    /* centralizacao */
+    position: relative;
+    background-color: green;
+    width: 610px;           /* 91.044776119403% */
+    height: 670px;          /* 100% */
+}
+
+#linhaSimplesEsquerda {
+    border: 3px solid white;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 7.5409836065574%;
+}
+
+#linhaSimplesDireita {
+    border: 3px solid white;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 92.459016393443%;
+}
+
+#linhaDuplaFundo {
+    border: 3px solid white;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 88.65671641791%;
+}
+
+#linhaMeioSaque {
+    border: 3px solid white;
+    position: absolute;
+    width: 0%;
+    height: 70.44776119403%;
+    left: 50%;
+    top: 29.55223880597%;
+}
+
+#linhaFrenteSaque {
+    border: 3px solid white;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top:  29.55223880597%;
+}
+
+#posicaoUm, #posicaoDois, #posicaoTres, #posicaoQuatro, #posicaoCinco, #posicaoSeis, #posicaoSete, #posicaoOito {
+    background-color: red;
+    position: absolute;
+    display: none;
+    width: 8.1967213114754%;
+    height: 7.4626865671642%;
+}
+
+#posicaoOito {
+    top: 89.55223880597%;
+    left: 3.4426229508197%;
+}
+
+#posicaoSete {
+    top: 89.55223880597%;
+    left: 45.901639344262%;
+}
+
+#posicaoSeis {
+    top: 89.55223880597%;
+    left: 87.704918032787%;
+}
+
+#posicaoCinco {
+    top: 46.268656716418%;
+    left: 3.4426229508197%;
+}
+
+#posicaoQuatro {
+    top: 46.268656716418%;
+    left: 87.704918032787%;
+}
+
+#posicaoTres {
+    top: 7.6119402985075%;
+    left: 3.4426229508197%;
+}
+
+#posicaoDois {
+    top: 7.6119402985075%;
+    left: 45.901639344262%;
+}
+
+#posicaoUm {
+    top: 7.6119402985075%;
+    left: 87.704918032787%;
+}
+
+
+/* BOTOES INTEGRADOS DENTRO DA QUADRA */
+
+/*#botoes {                     ESTILIZACOES DESATIVADAS PQ OS BOTOES FORAM INTEGRADADO A QUADRA
+    margin: 10% 2% 2% 5%;
+    width: 40%;
+    height: 0%;
+}
+
+#oito {
+    margin: 10% 1% 1% 10%;
+}
+
+#sete {
+    margin: 10% 1% 1% 15%;
+}
+
+#seis {
+    margin: 10% 1% 1% 15%;
+}
+
+#cinco {
+    margin: 10% 1% 1% 10%;
+}
+
+#quatro {
+    margin: 10% 1% 1% 38%;
+}
+
+#tres {
+    margin: 10% 1% 1% 10%;
+}
+
+#dois {
+    margin: 10% 1% 1% 15%;
+}
+
+#um {
+    margin: 10% 1% 1% 15%;
+} */
+
+.botaoQuadra {
+    position: absolute;
+}
+
+#um {
+    width: 33.333%;
+    height: 33.333%;
+    top: 0%;
+    left: 66.666%;
+}
+
+#dois {
+    width: 33.333%;
+    height: 33.333%;
+    top: 0%;
+    left: 33.333%;
+}
+
+#tres {
+    width: 33.333%;
+    height: 33.333%;
+    top: 0%;
+    left: 0%;
+}
+
+#quatro {
+    width: 33.333%;
+    height: 33.333%;
+    top: 33.333%;
+    left: 66.666%;
+}
+
+#cinco {
+    width: 33.333%;
+    height: 33.333%;
+    top: 33.333%;
+    left: 0%;
+}
+
+#seis {
+    width: 33.333%;
+    height: 33.333%;
+    top: 66.666%;
+    left: 66.666%;
+}
+
+#sete {
+    width: 33.333%;
+    height: 33.333%;
+    top: 66.666%;
+    left: 33.333%;
+}
+
+#oito {
+    width: 33.333%;
+    height: 33.333%;
+    top: 66.666%;
+    left: 0%;
+}
+/* BOTOES INTEGRADOS DENTRO DA QUADRA */
+
+
