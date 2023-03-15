@@ -1,3 +1,4 @@
 # Badminton
 <br>
-https://elguesabal.github.io/Badminton/
+Link online no Vercel:
+https://badbons.vercel.app/
