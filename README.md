@@ -1,3 +1,5 @@
 # Badminton
 <br>
-https://elguesabal.github.io/Badminton/
+Versão inicial: https://elguesabal.github.io/Badminton/
+
+Versão mais completa em React: https://badbons.vercel.app/
