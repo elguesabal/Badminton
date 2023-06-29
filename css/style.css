@@ -59,112 +59,73 @@
     top:  29.55223880597%;
 }
 
-#posicaoUm, #posicaoDois, #posicaoTres, #posicaoQuatro, #posicaoCinco, #posicaoSeis, #posicaoSete, #posicaoOito {
-    background-color: red;
+#peteca {
+    /* background-color: red; */
     position: absolute;
-    display: none;
-    width: 8.1967213114754%;
+    display: flex;
+    /* width: 8.1967213114754%;
     height: 7.4626865671642%;
-}
+    top: 35%;
+    left: 46.4%; */
+    border-radius: 100%;
+    transition: 2s;
 
-#posicaoOito {
-    top: 89.55223880597%;
-    left: 3.4426229508197%;
-}
-
-#posicaoSete {
-    top: 89.55223880597%;
-    left: 45.901639344262%;
-}
-
-#posicaoSeis {
-    top: 89.55223880597%;
-    left: 87.704918032787%;
-}
-
-#posicaoCinco {
-    top: 46.268656716418%;
-    left: 3.4426229508197%;
-}
-
-#posicaoQuatro {
-    top: 46.268656716418%;
-    left: 87.704918032787%;
-}
-
-#posicaoTres {
-    top: 7.6119402985075%;
-    left: 3.4426229508197%;
-}
-
-#posicaoDois {
-    top: 7.6119402985075%;
-    left: 45.901639344262%;
-}
-
-#posicaoUm {
-    top: 7.6119402985075%;
-    left: 87.704918032787%;
+    top: 35%;
+    left: 44%;
+    width: 10%;
+    height: 10%;
 }
 
 
 /* BOTOES INTEGRADOS DENTRO DA QUADRA */
 .botaoQuadra {
     position: absolute;
+    border: 1px solid black;    /* desativar dps */
+    width: 33.333%;
+    height: 33.333%;
 }
 
 #um {
-    width: 33.333%;
-    height: 33.333%;
     top: 0%;
     left: 66.666%;
 }
 
 #dois {
-    width: 33.333%;
-    height: 33.333%;
     top: 0%;
     left: 33.333%;
 }
 
 #tres {
-    width: 33.333%;
-    height: 33.333%;
     top: 0%;
     left: 0%;
 }
 
 #quatro {
-    width: 33.333%;
-    height: 33.333%;
     top: 33.333%;
     left: 66.666%;
 }
 
+#meio {
+    top: 33.333%;
+    left: 33.333%;
+}
+
 #cinco {
-    width: 33.333%;
-    height: 33.333%;
     top: 33.333%;
     left: 0%;
 }
 
 #seis {
-    width: 33.333%;
-    height: 33.333%;
     top: 66.666%;
     left: 66.666%;
 }
 
 #sete {
-    width: 33.333%;
-    height: 33.333%;
     top: 66.666%;
     left: 33.333%;
 }
 
 #oito {
-    width: 33.333%;
-    height: 33.333%;
     top: 66.666%;
     left: 0%;
 }
