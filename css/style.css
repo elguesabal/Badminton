@@ -72,15 +72,14 @@
 
     top: 35%;
     left: 44%;
-    width: 10%;
-    height: 10%;
+    width: 8%;
+    height: 8%;
 }
 
 
 /* BOTOES INTEGRADOS DENTRO DA QUADRA */
 .botaoQuadra {
     position: absolute;
-    border: 1px solid black;    /* desativar dps */
     width: 33.333%;
     height: 33.333%;
 }
