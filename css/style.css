@@ -130,10 +130,36 @@
 }
 /* BOTOES INTEGRADOS DENTRO DA QUADRA */
 
+/* BOTOES CONFIGURACOES FORA DA QUADRA */
+.btn-treino {
+    display: flex;
+    flex-direction: row;
+}
 
+.btn-icons {
+    flex-direction: row;
+}
+
+.btn-icons div {
+    margin: 10px;
+}
+
+.btn-icons div svg {
+    width: 40px;
+    height: 40px;
+}
+/* BOTOES CONFIGURACOES FORA DA QUADRA */
 
 @media (min-width: 800px) {
     .treino {
         display: flex;
+    }
+
+    .btn-treino {
+        flex-direction: column;
+    }
+
+    .btn-icons {
+        flex-direction: column;
     }
 }

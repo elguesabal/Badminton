@@ -3,6 +3,7 @@ import mudaDisplayEGrava from "./auxiliares/mudaDisplayEGrava.js"
 // import desmarcarPosicoes from "./auxiliares/desmarcarPosicoes.js"
 import telaPreparacao from "./auxiliares/telaPreparacao.js"
 import comecarTreino from "./auxiliares/comecarTreino.js"
+import telaCheia from "./auxiliares/telaCheia.js"
 
 
 botoes[0].onclick = () => mudaDisplayEGrava(35, 44)
@@ -28,3 +29,5 @@ botoes[11].onclick = () => {
     telaPreparacao()
     comecarTreino()
 }
+
+document.getElementById('iconTelaCheia').onclick = () => telaCheia()
