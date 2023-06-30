@@ -18,7 +18,7 @@ export default function telaPreparacao() {
     }, 2000)
 
     setTimeout(function() {
-        textoPreparacao.textContent = 'Começou!'
+        textoPreparacao.textContent = 'PLAY!'
     }, 3000)
 
     setTimeout(function() {
