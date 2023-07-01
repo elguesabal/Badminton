@@ -72,8 +72,8 @@
 
     top: 35%;
     left: 44%;
-    width: 8%;
-    height: 8%;
+    width: 15%;
+    height: 15%;
 }
 
 
@@ -131,10 +131,10 @@
 /* BOTOES INTEGRADOS DENTRO DA QUADRA */
 
 /* BOTOES CONFIGURACOES FORA DA QUADRA */
-.btn-treino {
+/* .btn-treino {
     display: flex;
     flex-direction: row;
-}
+} */
 
 .btn-icons {
     flex-direction: row;
@@ -155,9 +155,9 @@
         display: flex;
     }
 
-    .btn-treino {
+    /* .btn-treino {
         flex-direction: column;
-    }
+    } */
 
     .btn-icons {
         flex-direction: column;

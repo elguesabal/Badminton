@@ -4,7 +4,7 @@ export default function telaPreparacao() {
     const peteca = document.getElementById('peteca')
 
     peteca.style.top = `35%`
-    peteca.style.left = `46.4%`
+    peteca.style.left = `44%`
 
     telaPreparacao.style.display = 'flex'
     textoPreparacao.textContent = '3'

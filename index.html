@@ -31,7 +31,7 @@
 
                 <!-- POSICOES DENTRO DA QUADRA QUADRA -->
                 <div id="peteca">
-                    <img src="./img/peteca.png" alt="Peteca de treino" />
+                    <img id="imgPosicao" src="./img/8.png" alt="Peteca de treino" />
                 </div>
                 <!-- POSICOES DENTRO DA QUADRA QUADRA -->
 
@@ -53,11 +53,15 @@
 
         <br />
 
-        <div class="btn-treino justify-content-center align-items-center">
+        <!-- <div class="btn-treino justify-content-center align-items-center"> -->
 
-            <button id="comecar" class="btn btn-outline-success btn-lg">Play</button>
+            <div class="btn-icons d-flex justify-content-center align-items-center">
+                <div class="btn btn-outline-success btn-lg" id="comecar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                        <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                    </svg>
+                </div>
 
-            <div class="btn-icons d-flex">
                 <div class="btn btn-outline-success btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                         <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
@@ -79,7 +83,7 @@
                 </div>
             </div>
 
-        </div>
+        <!-- </div> -->
 
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
