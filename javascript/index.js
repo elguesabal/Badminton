@@ -4,6 +4,7 @@ import mudaDisplayEGrava from "./auxiliares/mudaDisplayEGrava.js"
 import telaPreparacao from "./auxiliares/telaPreparacao.js"
 import comecarTreino from "./auxiliares/comecarTreino.js"
 import telaCheia from "./auxiliares/telaCheia.js"
+import modoExibicao from "./auxiliares/modoExibicao.js"
 
 
 botoes[0].onclick = () => mudaDisplayEGrava(35, 44, 10)
@@ -31,3 +32,5 @@ botoes[11].onclick = () => {
 }
 
 document.getElementById('iconTelaCheia').onclick = () => telaCheia()
+
+document.getElementById('modoExibicao').onclick = () => modoExibicao()

@@ -68,12 +68,23 @@
     top: 35%;
     left: 46.4%; */
     border-radius: 100%;
-    transition: 2s;
+    /* transition: 2s; */
 
     top: 35%;
     left: 44%;
     width: 15%;
     height: 15%;
+}
+
+#imgPosicao {
+    display: none;
+}
+
+#quadradoPosicao {
+    background-color: red;
+    position: absolute;
+    width: 64%;
+    height: 56%;
 }
 
 

@@ -10,9 +10,12 @@ export default function mudaDisplayEGrava(top, left, posicao) {
         posicoesProgramadas.push({ top: top, left: left, posicao: posicao })
     }
 
-    let tempo = Number(document.getElementById('tempo').value)
+    if (document.getElementById('modoExibicao').checked == false) {
+        document.getElementById('peteca').style.transition = `${Number(document.getElementById('tempo').value)}s`
+    } else {
+        document.getElementById('peteca').style.transition = '0s'
+    }
 
-    document.getElementById('peteca').style.transition = `${tempo}s`
     // document.getElementById('peteca').style.top = `35%`
     // document.getElementById('peteca').style.left = `44%`
     document.getElementById('imgPosicao').src = `./img/${posicao}.png`

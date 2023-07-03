@@ -12,9 +12,15 @@ export default function comecarTreino() {
             setTimeout(function () {
                 for (let j = 1; j < posicoesProgramadas.length; j++) {
                     setTimeout(function () {
-                        document.getElementById('imgPosicao').src = `./img/${posicoesProgramadas[j].posicao}.png`
-                        peteca.style.top = `${posicoesProgramadas[j].top}%`
-                        peteca.style.left = `${posicoesProgramadas[j].left}%`
+                        if (document.getElementById('modoExibicao').checked) {
+                            peteca.style.transition = `0s`
+                            peteca.style.top = `${posicoesProgramadas[j].top}%`
+                            peteca.style.left = `${posicoesProgramadas[j].left}%`
+                        } else {
+                            document.getElementById('imgPosicao').src = `./img/${posicoesProgramadas[j].posicao}.png`
+                            peteca.style.top = `${posicoesProgramadas[j].top}%`
+                            peteca.style.left = `${posicoesProgramadas[j].left}%`
+                        }
                     }, tempo * 1000 * (j - 1))
                 }
             }, i * tempo * (posicoesProgramadas.length - 1) * 1000)
