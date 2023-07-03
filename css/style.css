@@ -80,8 +80,7 @@
     display: none;
 }
 
-#quadradoPosicao {
-    background-color: red;
+#petecaPosicao {
     position: absolute;
     width: 64%;
     height: 56%;

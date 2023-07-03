@@ -32,7 +32,7 @@
                 <!-- POSICOES DENTRO DA QUADRA QUADRA -->
                 <div id="peteca">
                     <img id="imgPosicao" src="./img/8.png" alt="Peteca de treino" />
-                    <div id="quadradoPosicao"></div>
+                    <img id="petecaPosicao" src="./img/peteca.png" alt="Peteca de treino"/>
                 </div>
                 <!-- POSICOES DENTRO DA QUADRA QUADRA -->
 
@@ -108,7 +108,7 @@
                     <hr class="my-4" />
 
                     <div class="col-md-6">
-                        <label for="country" class="form-label">Tempo em segundos:</label>
+                        <label for="state" class="form-label">Tempo em segundos:</label>
                         <select class="form-select" id="tempo" required>
                             <option selected value="0">Escolha o intervalo...</option>
                             <option value="1">1 segundo</option>
@@ -116,21 +116,13 @@
                             <option value="3">3 segundo</option>
                             <option value="4">4 segundo</option>
                             <option value="5">5 segundo</option>
-                            <option value="6">6 segundo</option>
-                            <option value="7">7 segundo</option>
-                            <option value="8">8 segundo</option>
-                            <option value="9">9 segundo</option>
-                            <option value="10">10 segundo</option>
                         </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
                     </div>
 
                     <div class="col-md-6">
                         <label for="state" class="form-label">Número de repetições:</label>
                         <select class="form-select" id="repeticoes" required>
-                            <option selected>Quantidades de vezes...</option>
+                            <option selected value="0">Quantidades de vezes...</option>
                             <option value="1">1 vez</option>
                             <option value="2">2 vezes</option>
                             <option value="3">3 vezes</option>
@@ -142,9 +134,6 @@
                             <option value="9">9 vezes</option>
                             <option value="10">10 vezes</option>
                         </select>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
                     </div>
 
                 </div>
