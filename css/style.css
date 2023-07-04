@@ -62,28 +62,29 @@
 #peteca {
     /* background-color: red; */
     position: absolute;
-    display: flex;
+    /* display: flex; */
     /* width: 8.1967213114754%;
     height: 7.4626865671642%;
     top: 35%;
     left: 46.4%; */
-    border-radius: 100%;
+    /* border-radius: 100%; */
     /* transition: 2s; */
 
     top: 35%;
-    left: 44%;
-    width: 15%;
-    height: 15%;
+    left: 41%;
+    width: 10vh;
+    height: 10vh;
 }
 
 #imgPosicao {
     display: none;
+    width: 15vh;
+    height: 15vh;
 }
 
 #petecaPosicao {
-    position: absolute;
-    width: 64%;
-    height: 56%;
+    width: 10vh;
+    height: 10vh;
 }
 
 

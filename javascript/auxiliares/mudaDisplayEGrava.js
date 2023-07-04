@@ -1,4 +1,4 @@
-import { botoes, posicoesProgramadas, tempo, peteca, modoExibicao, imgPosicao } from "./variaveis.js"
+import { posicoesProgramadas, tempo, peteca, modoExibicao, imgPosicao, programar } from "./variaveis.js"
 // import desmarcarPosicoes from "./desmarcarPosicoes.js"
 
 export default function mudaDisplayEGrava(top, left, posicao) {
@@ -6,7 +6,7 @@ export default function mudaDisplayEGrava(top, left, posicao) {
 
     // posicoes[posicao].style.display = 'flex'
 
-    if (botoes[9].checked) {
+    if (programar.checked) {
         posicoesProgramadas.push({ top: top, left: left, posicao: posicao })
     }
 

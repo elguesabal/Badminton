@@ -1,6 +1,5 @@
-import { botoes } from "./auxiliares/variaveis.js"
+import { botoes, comecar, iconTelaCheia } from "./auxiliares/variaveis.js"
 import mudaDisplayEGrava from "./auxiliares/mudaDisplayEGrava.js"
-// import desmarcarPosicoes from "./auxiliares/desmarcarPosicoes.js"
 import telaPreparacao from "./auxiliares/telaPreparacao.js"
 import comecarTreino from "./auxiliares/comecarTreino.js"
 import telaCheia from "./auxiliares/telaCheia.js"
@@ -25,12 +24,8 @@ botoes[7].onclick = () => mudaDisplayEGrava(89.5, 44, 7)
 
 botoes[8].onclick = () => mudaDisplayEGrava(89.5, 1, 8)
 
-botoes[11].onclick = () => {
-    // desmarcarPosicoes()
-    telaPreparacao()
-    comecarTreino()
-}
+comecar.onclick = () => { telaPreparacao(); comecarTreino() }
 
-document.getElementById('iconTelaCheia').onclick = () => telaCheia()
+iconTelaCheia.onclick = () => telaCheia()
 
 document.getElementById('modoExibicao').onclick = () => modoExibicao()

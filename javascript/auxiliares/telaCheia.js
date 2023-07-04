@@ -1,5 +1,5 @@
 export default function telaCheia() {
-    var elemento = document.documentElement;
+    const elemento = document.documentElement
 
     if (document.webkitFullscreenElement) {
         if (document.exitFullscreen) {

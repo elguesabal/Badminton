@@ -1,11 +1,13 @@
+import { peteca, imgPosicao, petecaPosicao, tempo } from "./variaveis.js"
+
 export default function modoExibicao() {
     if (document.getElementById('modoExibicao').checked) {
-        document.getElementById('peteca').style.transition = '0s'
-        document.getElementById('imgPosicao').style.display = 'none'
-        document.getElementById('petecaPosicao').style.display = 'flex'
+        peteca.style.transition = '0s'
+        imgPosicao.style.display = 'none'
+        petecaPosicao.style.display = 'flex'
     } else {
-        document.getElementById('peteca').style.transition = `${Number(document.getElementById('tempo').value)}s`
-        document.getElementById('petecaPosicao').style.display = 'none'
-        document.getElementById('imgPosicao').style.display = 'flex'
+        peteca.style.transition = `${Number(tempo.value)}s`
+        petecaPosicao.style.display = 'none'
+        imgPosicao.style.display = 'flex'
     }
 }
