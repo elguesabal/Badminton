@@ -104,7 +104,7 @@
 
                     <div class="col-md-6">
                         <label for="state" class="form-label">Tempo em segundos:</label>
-                        <select class="form-select" id="tempo" required>
+                        <select class="form-select" id="tempo">
                             <option selected value="0">Escolha o intervalo...</option>
                             <option value="1">1 segundo</option>
                             <option value="2">2 segundo</option>
@@ -116,7 +116,7 @@
 
                     <div class="col-md-6">
                         <label for="state" class="form-label">Número de repetições:</label>
-                        <select class="form-select" id="repeticoes" required>
+                        <select class="form-select" id="repeticoes">
                             <option selected value="0">Quantidades de vezes...</option>
                             <option value="1">1 vez</option>
                             <option value="2">2 vezes</option>
@@ -141,7 +141,92 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                ...
+                <p>Página voltada para treinamento de movimentação da quadra blablabla (to com preguica de fz um texto bonitinho entao deixo nas suas maos alexandre kkkkk)</p>
+                
+                <br/><br/>
+
+                <div>
+                    <h2>Explicação do botão de play</h2>
+                    <div class="btn btn-outline-success btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
+                    <p>O botão play serve para dar início ao treinamento pré programado pelo botão configurações.</p>
+                </div>
+
+                <br/>
+
+                <div>
+                    <h2>Explicação do botão de configurações</h2>
+                    <div class="btn btn-outline-success btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                        </svg>
+                    </div>
+                    <p>Ao clicar neste botão é aberto um painel com algumas possíveis configurações:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="form-switch col-md-6">
+                                <input class="form-check-input" type="checkbox" id="programar" />
+                                <label class="form-check-label">Gravar sequência</label>
+                            </div>
+                            <p>Ao marcar esta opção as próximas posições serão gravadas para ser executado pelo botão play.</p>
+                            <span>Obs: Ao gravar 1 ou menos posições será exibida a seguinte mensagem: "Grave no mínimo duas posições ou mais"</span>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="col-md-6">
+                                <label class="form-label">Tempo em segundos:</label>
+                                <select class="form-select">
+                                    <option>Escolha o intervalo...</option>
+                                    <option>1 segundo</option>
+                                    <option>2 segundo</option>
+                                    <option>3 segundo</option>
+                                    <option>4 segundo</option>
+                                    <option>5 segundo</option>
+                                </select>
+                            </div>
+                            <p>Ao escolher um intervalo ele será aplicado como intervalo de tempo quando reproduzido pelo botão play.</p>
+                            <span>Obs: Caso não seja escolhido nenhuma opção aparecerá a seguinte mensagem: "Escolha qual intervalo de tempo entre as posicoes"</span>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="col-md-6">
+                                <label class="form-label">Número de repetições:</label>
+                                <select class="form-select">
+                                    <option>Quantidades de vezes...</option>
+                                    <option>1 vez</option>
+                                    <option>2 vezes</option>
+                                    <option>3 vezes</option>
+                                    <option>4 vezes</option>
+                                    <option>5 vezes</option>
+                                    <option>6 vezes</option>
+                                    <option>7 vezes</option>
+                                    <option>8 vezes</option>
+                                    <option>9 vezes</option>
+                                    <option>10 vezes</option>
+                                </select>
+                            </div>
+                            <p>Nesta opção quantas vezes o movimento programado vai se repetir ao pressionar player.</p>
+                            <span>Obs: Caso não seja escolhido nenhuma opção aparecerá a seguinte mensagem: "Escolha quantas repetições serão feitas"</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <br/>
+
+                <div>
+                    <h2>Explicação do botão de tela cheia</h2>
+                    <div class="btn btn-outline-success btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z" />
+                        </svg>
+                    </div>
+                    <p>Clicando neste botão alterna entre modo tela cheia ou modo normal.</p>
+                </div>
+                <div>
+
+                </div>
             </div>
         </div>
 
