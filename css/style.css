@@ -1,11 +1,19 @@
 #telaPreparacao {
+    display: none; /* mudar dps */
     position: absolute;
-    display: none;
     background-color: rgba(0, 0, 0, 0.700);
 }
 
+#imgPreparacao {
+    width: 50vh;
+    height: 50vh;
+    filter: invert(100%);
+    margin-bottom: 0;
+}
+
 #textoPreparacao {
-    font-size: 30vw;
+    font-size: 10vw;
+    margin-top: 0;
 }
 
 #quadra {

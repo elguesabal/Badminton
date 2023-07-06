@@ -1,4 +1,4 @@
-import { posicoesProgramadas, textoPreparacao, peteca, tempo, repeticoes } from "./variaveis.js"
+import { posicoesProgramadas, textoPreparacao, peteca, tempo, repeticoes, petecaPosicao } from "./variaveis.js"
 
 export default function telaPreparacao() {
     // const telaPreparacao = document.getElementById('telaPreparacao')
@@ -19,9 +19,13 @@ export default function telaPreparacao() {
         textoPreparacao.style.fontSize = '20pt'
         textoPreparacao.textContent = 'Grave no mínimo duas posições ou mais'
     } else {
+        // petecaPosicao.style.filter = 'invert(100%)'
+        // petecaPosicao.style.width = '40vh'
+        // petecaPosicao.style.height = '40vh'
+        // petecaPosicao.src = './img/4.png'
         peteca.style.top = `35%`
-        peteca.style.left = `44%`
-        textoPreparacao.style.fontSize = '30vw'
+        peteca.style.left = `46%`
+        textoPreparacao.style.fontSize = '10vw'
         textoPreparacao.textContent = '3'
         setTimeout(() => textoPreparacao.textContent = '2', 1000)
         setTimeout(() => textoPreparacao.textContent = '1', 2000)
