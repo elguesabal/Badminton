@@ -69,6 +69,7 @@
 
 #peteca {
     /* background-color: red; */
+    display: flex;
     position: absolute;
     /* display: flex; */
     /* width: 8.1967213114754%;

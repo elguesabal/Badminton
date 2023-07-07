@@ -5,6 +5,7 @@ export default function mudaDisplayEGrava(top, left, posicao) {
     // desmarcarPosicoes()
 
     // posicoes[posicao].style.display = 'flex'
+    peteca.style.display = 'flex'
 
     if (programar.checked) {
         posicoesProgramadas.push({ top: top, left: left, posicao: posicao })

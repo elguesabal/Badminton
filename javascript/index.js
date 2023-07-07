@@ -4,6 +4,7 @@ import telaPreparacao from "./auxiliares/telaPreparacao.js"
 import comecarTreino from "./auxiliares/comecarTreino.js"
 import telaCheia from "./auxiliares/telaCheia.js"
 import modoExibicao from "./auxiliares/modoExibicao.js"
+import apagarSequencia from "./auxiliares/apagarSequencia.js"
 
 
 botoes[0].onclick = () => mudaDisplayEGrava(35, 44, 10)
@@ -29,3 +30,5 @@ comecar.onclick = () => { telaPreparacao(); comecarTreino() }
 iconTelaCheia.onclick = () => telaCheia()
 
 document.getElementById('modoExibicao').onclick = () => modoExibicao()
+
+document.getElementById('apagarSequencia').onclick = () => apagarSequencia()

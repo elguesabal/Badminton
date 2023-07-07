@@ -19,10 +19,12 @@ export default function comecarTreino() {
                     for (let j = 1; j < posicoesProgramadas.length; j++) {
                         setTimeout(function () {
                             if (modoExibicao.checked) {
+                                peteca.style.display = 'flex'
                                 peteca.style.transition = `0s`
                                 // petecaPosicao.src = './img/peteca.png'
                                 peteca.style.top = `${posicoesProgramadas[j].top}%`
                                 peteca.style.left = `${posicoesProgramadas[j].left}%`
+                                setTimeout(() => peteca.style.display = 'none', tempo / 2 * 1000)
                             } else {
                                 imgPosicao.src = `./img/${posicoesProgramadas[j].posicao}.png`
                                 peteca.style.top = `${posicoesProgramadas[j].top}%`

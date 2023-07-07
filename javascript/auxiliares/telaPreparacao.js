@@ -23,8 +23,14 @@ export default function telaPreparacao() {
         // petecaPosicao.style.width = '40vh'
         // petecaPosicao.style.height = '40vh'
         // petecaPosicao.src = './img/4.png'
-        peteca.style.top = `35%`
-        peteca.style.left = `46%`
+
+        if (modoExibicao.checked) {
+            peteca.style.display = 'none'
+        } else {
+            peteca.style.top = `35%`
+            peteca.style.left = `46%`
+        }
+
         textoPreparacao.style.fontSize = '10vw'
         textoPreparacao.textContent = '3'
         setTimeout(() => textoPreparacao.textContent = '2', 1000)
