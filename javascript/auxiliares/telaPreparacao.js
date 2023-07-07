@@ -29,7 +29,13 @@ export default function telaPreparacao() {
         textoPreparacao.textContent = '3'
         setTimeout(() => textoPreparacao.textContent = '2', 1000)
         setTimeout(() => textoPreparacao.textContent = '1', 2000)
-        setTimeout(() => textoPreparacao.textContent = 'PLAY!', 3000)
+        setTimeout(() => {
+            textoPreparacao.textContent = 'PLAY!'
+
+            const audio = new Audio();
+            audio.src = './mp3/apito.mp3';
+            audio.play();
+        }, 3000)
     }
 
     setTimeout(() => document.getElementById('telaPreparacao').style.display = 'none', 3500)
