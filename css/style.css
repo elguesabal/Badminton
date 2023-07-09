@@ -1,0 +1,185 @@
+#telaPreparacao {
+    display: none; /* mudar dps */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.700);
+}
+
+#imgPreparacao {
+    width: 50vh;
+    height: 50vh;
+    filter: invert(100%);
+    margin-bottom: 0;
+}
+
+#textoPreparacao {
+    font-size: 10vw;
+    margin-top: 0;
+}
+
+#quadra {
+    /* centralizacao */
+    margin: 2%;
+    /* centralizacao */
+    position: relative;
+    background-color: green;
+    width: 610px;           /* 91.044776119403% */
+    height: 670px;          /* 100% */
+}
+
+#linhaSimplesEsquerda {
+    border: 3px solid white;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 7.5409836065574%;
+}
+
+#linhaSimplesDireita {
+    border: 3px solid white;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 92.459016393443%;
+}
+
+#linhaDuplaFundo {
+    border: 3px solid white;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 88.65671641791%;
+}
+
+#linhaMeioSaque {
+    border: 3px solid white;
+    position: absolute;
+    width: 0%;
+    height: 70.44776119403%;
+    left: 50%;
+    top: 29.55223880597%;
+}
+
+#linhaFrenteSaque {
+    border: 3px solid white;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top:  29.55223880597%;
+}
+
+#peteca {
+    /* background-color: red; */
+    display: flex;
+    position: absolute;
+    /* display: flex; */
+    /* width: 8.1967213114754%;
+    height: 7.4626865671642%;
+    top: 35%;
+    left: 46.4%; */
+    /* border-radius: 100%; */
+    /* transition: 2s; */
+
+    top: 35%;
+    left: 44%;
+    width: 10vh;
+    height: 10vh;
+}
+
+#imgPosicao {
+    display: none;
+    width: 15vh;
+    height: 15vh;
+}
+
+#petecaPosicao {
+    width: 10vh;
+    height: 10vh;
+}
+
+
+/* BOTOES INTEGRADOS DENTRO DA QUADRA */
+.botaoQuadra {
+    position: absolute;
+    width: 33.333%;
+    height: 33.333%;
+}
+
+#um {
+    top: 0%;
+    left: 66.666%;
+}
+
+#dois {
+    top: 0%;
+    left: 33.333%;
+}
+
+#tres {
+    top: 0%;
+    left: 0%;
+}
+
+#quatro {
+    top: 33.333%;
+    left: 66.666%;
+}
+
+#meio {
+    top: 33.333%;
+    left: 33.333%;
+}
+
+#cinco {
+    top: 33.333%;
+    left: 0%;
+}
+
+#seis {
+    top: 66.666%;
+    left: 66.666%;
+}
+
+#sete {
+    top: 66.666%;
+    left: 33.333%;
+}
+
+#oito {
+    top: 66.666%;
+    left: 0%;
+}
+/* BOTOES INTEGRADOS DENTRO DA QUADRA */
+
+/* BOTOES CONFIGURACOES FORA DA QUADRA */
+/* .btn-treino {
+    display: flex;
+    flex-direction: row;
+} */
+
+.btn-icons {
+    flex-direction: row;
+}
+
+.btn-icons div {
+    margin: 10px;
+}
+
+.btn-icons div svg {
+    width: 40px;
+    height: 40px;
+}
+/* BOTOES CONFIGURACOES FORA DA QUADRA */
+
+@media (min-width: 800px) {
+    .treino {
+        display: flex;
+    }
+
+    /* .btn-treino {
+        flex-direction: column;
+    } */
+
+    .btn-icons {
+        flex-direction: column;
+    }
+}
