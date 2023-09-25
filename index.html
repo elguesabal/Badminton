@@ -108,10 +108,10 @@
                         <select class="form-select" id="tempo">
                             <option selected value="0">Escolha o intervalo...</option>
                             <option value="1">1 segundo</option>
-                            <option value="2">2 segundo</option>
-                            <option value="3">3 segundo</option>
-                            <option value="4">4 segundo</option>
-                            <option value="5">5 segundo</option>
+                            <option value="2">2 segundos</option>
+                            <option value="3">3 segundos</option>
+                            <option value="4">4 segundos</option>
+                            <option value="5">5 segundos</option>
                         </select>
                     </div>
 
@@ -190,10 +190,10 @@
                                 <select class="form-select">
                                     <option>Escolha o intervalo...</option>
                                     <option>1 segundo</option>
-                                    <option>2 segundo</option>
-                                    <option>3 segundo</option>
-                                    <option>4 segundo</option>
-                                    <option>5 segundo</option>
+                                    <option>2 segundos</option>
+                                    <option>3 segundos</option>
+                                    <option>4 segundos</option>
+                                    <option>5 segundos</option>
                                 </select>
                             </div>
                             <p>Ao escolher um intervalo ele será aplicado como intervalo de tempo quando reproduzido pelo botão play.</p>
@@ -245,9 +245,14 @@
     <script type="module" src="./javascript/index.js"></script>
     <script>
         const url = new URL(window.location.href)
-        const config = Boolean(url.searchParams.get('config'))
-        if (config) {
-            document.getElementById('config').style.display = 'flex'
+        const config = url.searchParams.get('config')
+        if (config == "off") {
+            document.getElementById("modoExibicao").checked = false;
+            document.getElementById("petecaPosicao").style.display = "none";
+            document.getElementById("imgPosicao").style.display = "flex";
+            document.getElementById("tempo").selectedIndex = 1;
+        } else if(config == "flex") {
+            document.getElementById('config').style.display = 'flex';
         }
     </script>
 </body>
